@@ -21,7 +21,26 @@ mongoose
   })
   .then(() => {
     // Run your code here, after you have insured that the connection was made
+
+Recipe.create({
+  title: "delicacy",
+  level: "masterchef",
+  ingredients: ["frog legs", "eggs"],
+  cuisine: "Florida",
+  dishType: "appetizer"
+  duration:: 17,
+  creator: "Rafa" 
+}).then(console.log)
+
+
+
   })
   .catch(error => {
     console.error('Error connecting to the database', error);
   });
+
+// Iteration 2
+
+Model.create({ name: 'NewFood', duration: 32 })
+.then(res => console.log(res))
+.catch(err => console.error(err))
