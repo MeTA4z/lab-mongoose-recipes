@@ -30,7 +30,7 @@ mongoose
       cuisine: "Florida",
       dishType: "Snack on the steak",
       duration: 17,
-      creator: "almighty Victor"
+      creator: "El Rafa"
     }).then(console.log)
 
     await Recipe.insertMany(data).then(console.log)
